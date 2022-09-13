@@ -8,10 +8,12 @@ class MusicCard extends React.Component {
     loading: false,
     favorites: [],
   };
+  // mentoria Guthias 01-09 //
 
   async componentDidMount() {
     this.setState({ favorites: await getFavoriteSongs() });
   }
+  // mentoria Guthias 01-09 //
 
   favoriteSong = () => {
     this.setState({ loading: true }, async () => {
@@ -23,6 +25,7 @@ class MusicCard extends React.Component {
       });
     });
   };
+  // mentoria Guthias 01-09 //
 
   render() {
     const { loading, favorites } = this.state;

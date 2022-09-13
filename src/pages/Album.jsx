@@ -10,6 +10,7 @@ class Album extends React.Component {
     loading: true,
     list: [],
   };
+  // mentoria Guthias //
 
   async componentDidMount() {
     const { match: { params: { id } } } = this.props;
@@ -20,7 +21,7 @@ class Album extends React.Component {
   render() {
     const { loading, list } = this.state;
     const sons = list.filter((music) => music.kind === 'song');
-
+    // mentoria Guthias 01-09 //
     return (
       <div data-testid="page-album">
         <Header />

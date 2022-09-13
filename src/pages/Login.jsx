@@ -9,6 +9,7 @@ class Login extends React.Component {
     loading: false,
     username: '',
   };
+  // mentoria Guthias 01-09 //
 
   clicado = () => {
     const { username } = this.state;
@@ -22,6 +23,7 @@ class Login extends React.Component {
   handleUser = ({ target: { value } }) => {
     this.setState({ username: value });
   };
+  // mentoria Guthias 01-09 //
 
   render() {
     const { loading, username, redirect } = this.state;

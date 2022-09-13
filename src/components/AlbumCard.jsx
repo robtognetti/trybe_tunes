@@ -21,7 +21,7 @@ class AlbumCard extends React.Component {
       trackCount,
 
     } = this.props;
-
+    // mentoria Guthias 01-09 //
     return (
 
       <div>

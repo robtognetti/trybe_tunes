@@ -12,6 +12,7 @@ class Header extends React.Component {
   componentDidMount() {
     this.getUser();
   }
+  // mentoria Guthias 01-09 //
 
   getUser = async () => {
     this.setState({ loading: true });
@@ -21,6 +22,7 @@ class Header extends React.Component {
       usuario: user.name,
     });
   };
+  // mentoria Guthias 01-09 //
 
   render() {
     const { loading, usuario } = this.state;

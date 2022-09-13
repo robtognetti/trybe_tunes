@@ -12,9 +12,10 @@ class Search extends React.Component {
     albums: [],
   };
 
-  handleChange = ({ target: { value } }) => {
+  mudanca = ({ target: { value } }) => {
     this.setState({ pesquisar: value });
   };
+  // mentoria Guthias 01-09 //
 
   fetchArtist = () => {
     const { pesquisar } = this.state;
@@ -28,6 +29,7 @@ class Search extends React.Component {
       });
     });
   };
+  // mentoria Guthias 01-09 //
 
   render() {
     const { albums, banda, pesquisar, loading } = this.state;
@@ -43,7 +45,7 @@ class Search extends React.Component {
               placeholder="Banda"
               data-testid="search-artist-input"
               value={ pesquisar }
-              onChange={ this.handleChange }
+              onChange={ this.mudanca }
             />
             <button
               type="button"
